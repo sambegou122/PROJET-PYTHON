@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experimentateur &#8212; Module tp-experimentateur 0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="experience module" href="experience.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="experience.html" title="experience module"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Module tp-experimentateur 0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Experimentateur</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="experimentateur">
+<h1>Experimentateur<a class="headerlink" href="#experimentateur" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="experience.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">experience</span></code> module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marker.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">marker</span></code> module</a></li>
+</ul>
+</div>
+<div class="section" id="etat-du-tp">
+<h2>Etat du TP<a class="headerlink" href="#etat-du-tp" title="Permalink to this headline">¶</a></h2>
+<p>Décrivez ici l’état d’avancement du TP.</p>
+</div>
+<div class="section" id="reponses-aux-questions">
+<h2>Réponses aux questions<a class="headerlink" href="#reponses-aux-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="strategie-1">
+<h3>1.2 STRATÉGIE 1:<a class="headerlink" href="#strategie-1" title="Permalink to this headline">¶</a></h3>
+<p>Question 1.2.1</p>
+<p>Voir code de la fontion negative_markers1 (Dans le fichier test.py)</p>
+<hr class="docutils" />
+<p>Question 1.2.2</p>
+<p>Pour etudier la complexité de l’algorithme de la strategie 1.
+Nous proposons de compter l’operation de comparaison (compare) OP = compare.</p>
+<hr class="docutils" />
+<p>Question 1.2.3</p>
+<p>Non, il existe pas de pire cas pour cet algorithme , il existe plutôt un cas général.
+Car le nombre d’operation de comparaison est identique dans chaqun des cas que nous testons.</p>
+<hr class="docutils" />
+<p>Question 1.2.4</p>
+<p>soit C1(m,p)le nombre d’OP fait par l’algorithme
+Nous avons deux cas :
+cas 1: si p est nul (p=0), dans ce cas C1(m,p)=0 quelque soit la valeur de m (car il y a pas de markers positives donc pas de comparaison )
+cas 2: si p est superieur ou égal 1 (p&gt;=1) ===&gt; C1(m,p)= somme des (m-i+1) pour i allant de 1 à p:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>                  <span class="n">p</span>
+        <span class="n">C1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">Σ</span><span class="p">(</span><span class="n">m</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+                  <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Exemple</span><span class="p">:</span> <span class="n">Pour</span> <span class="n">m</span><span class="o">=</span><span class="mi">5</span> <span class="n">p</span><span class="o">=</span><span class="mi">3</span> <span class="n">on</span> <span class="n">a</span> <span class="p">:</span>
+                <span class="n">p</span>
+                <span class="n">Σ</span><span class="p">(</span><span class="n">m</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="mi">5</span><span class="o">-</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="mi">4</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="o">=</span><span class="mi">12</span> <span class="o">====&gt;</span> <span class="n">C1</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">=</span><span class="mi">12</span>
+                <span class="n">i</span><span class="o">=</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="strategie-2">
+<h3>1.3 Stratégie 2:<a class="headerlink" href="#strategie-2" title="Permalink to this headline">¶</a></h3>
+<p>Question 1.3.2</p>
+<p>Pire des cas p = m et marqueurs positives classé par ordre décroissant.</p>
+<p>Dans notre cas puisque le nombre de comparaison varie selon le choix de l’algorithme
+dans ce cas nous pouvons trouver une fonction qui se raproche plus ou moins du nombre de comparaison</p>
+<p>Donc C2(m,p) = Θ(m*p - (p²-(p*(p-1))/2)) ( On suppose )</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Exemple</span><span class="p">:</span> <span class="n">Pour</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span> <span class="n">p</span><span class="o">=</span><span class="mi">6</span> <span class="n">C2</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="o">=</span> <span class="mi">60</span> <span class="o">-</span> <span class="p">(</span><span class="mi">36</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span> <span class="o">=</span> <span class="mi">60</span><span class="o">-</span><span class="mi">21</span> <span class="o">=</span> <span class="mi">39</span>
+<span class="n">C2</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="o">=</span> <span class="n">Θ</span><span class="p">(</span><span class="mi">39</span><span class="p">)</span>
+
+<span class="n">Pour</span> <span class="n">m</span><span class="o">=</span><span class="mi">10</span> <span class="n">p</span><span class="o">=</span><span class="mi">7</span> <span class="n">C2</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="o">=</span> <span class="mi">70</span> <span class="o">-</span> <span class="p">(</span><span class="mi">49</span><span class="o">-</span><span class="mi">21</span><span class="p">)</span> <span class="o">=</span> <span class="mi">70</span><span class="o">-</span><span class="mi">28</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="n">C2</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span> <span class="o">=</span> <span class="n">Θ</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>On voit que cette formule nous donne une valeur plus proche du nombre de comparaison</p>
+</div>
+<div class="section" id="strategie-3">
+<h3>1.4 Stratégie 3:<a class="headerlink" href="#strategie-3" title="Permalink to this headline">¶</a></h3>
+<p>Question 1.4.2</p>
+<p>Pire des cas p = m et marqueurs et marqueurs positives classé par ordre décroissant.</p>
+<p>On constate que la stratégie 2 fait moins de comparaisons que la 3. Ceci est dû au trie qui demande beaucoup plus de comparaisons pour la stratégie 3 car on trie 2 listes au lieu d’une dans la 2.</p>
+<p>Donc la strategie 3 est un grand O de la stategie 2 (voir graphique)
+Dans ce cas:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C3</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">O</span><span class="p">(</span><span class="n">C2</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">p</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>puisque qu’elle est juste un peu plus grande que le la 2</p>
+</div>
+<div class="section" id="recherche-empirique-des-cas-favorables">
+<h3>1.5  Recherche empirique des cas favorables<a class="headerlink" href="#recherche-empirique-des-cas-favorables" title="Permalink to this headline">¶</a></h3>
+<p>Question 1.5.2</p>
+<hr class="docutils" />
+<a class="reference internal image-reference" href="_images/tp1-10.png"><img alt="Alternative text" src="_images/tp1-10.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-20.png"><img alt="Alternative text" src="_images/tp1-20.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-30.png"><img alt="Alternative text" src="_images/tp1-30.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-40.png"><img alt="Alternative text" src="_images/tp1-40.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-50.png"><img alt="Alternative text" src="_images/tp1-50.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-60.png"><img alt="Alternative text" src="_images/tp1-60.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-70.png"><img alt="Alternative text" src="_images/tp1-70.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-80.png"><img alt="Alternative text" src="_images/tp1-80.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-90.png"><img alt="Alternative text" src="_images/tp1-90.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/tp1-100.png"><img alt="Alternative text" src="_images/tp1-100.png" style="width: 300px;" /></a>
+<p>D’après les différents graphiques on remarque une nette différence entre la stratégie 1 et les deux autres stratégies. La stratégie 1 suit la fonction du 1.2.4 tandis que la 2 et 3 sont proches de la fonction logarithme mais influencé par le tri des listes celles-ci varies.</p>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/logo_FIL.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="#">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Experimentateur</a><ul>
+<li><a class="reference internal" href="#etat-du-tp">Etat du TP</a></li>
+<li><a class="reference internal" href="#reponses-aux-questions">Réponses aux questions</a><ul>
+<li><a class="reference internal" href="#strategie-1">1.2 STRATÉGIE 1:</a></li>
+<li><a class="reference internal" href="#strategie-2">1.3 Stratégie 2:</a></li>
+<li><a class="reference internal" href="#strategie-3">1.4 Stratégie 3:</a></li>
+<li><a class="reference internal" href="#recherche-empirique-des-cas-favorables">1.5  Recherche empirique des cas favorables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="experience.html"
+                        title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">experience</span></code> module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="experience.html" title="experience module"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">Module tp-experimentateur 0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Experimentateur</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015-2021, Diallo Ibrahima Sambegou- Deronne Maxime, Univ. Lille.
+      Last updated on 15/02/2021.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

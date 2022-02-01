@@ -1,0 +1,39 @@
+-----------------
+tp-arbresbinaires
+-----------------
+
+~~~~~~~~~~
+Etat du TP
+~~~~~~~~~~
+
+Décrivez ici l'état d'avancement du TP.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Réponses aux questions
+~~~~~~~~~~~~~~~~~~~~~~
+
+Question 5.2.5
+--------------
+
+Le calcul est long car on a des appelles qui se répetent beaucoup
+
+
+Question 5.3.1
+--------------
+
+
+
+Question 5.3.2
+--------------
+
+On vérifie que la valeurs à gauche d'un noeud est inférieur et pour celui de droite supérieur.
+
+Question 5.3.7
+--------------
+
+Pour l'arbre 3 il est logique qu'il y est moins de comparaisons car 0 étant la plus petite valeur il suffit de vérifier à chaque fois à gauche et vu que pour l'arbre la hauteur du noeud le plus à gauche est de 2.
+
+Question 5.3.8
+--------------
+
+Pour la plus petite valeur on se dirige vers le plus à gauche. Pour la plus grande on se dirige le plus à droite.
