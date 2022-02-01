@@ -1,0 +1,14 @@
+France Belgique
+France Allemagne
+France Espagne
+France Italie
+France Suisse
+Belgique Allemagne
+Belgique Pays-Bas
+Allemagne Autriche
+Allemagne Suisse
+Allemagne Pays-Bas
+Espagne Portugal
+Italie Autriche
+Italie Suisse
+Suisse Autriche

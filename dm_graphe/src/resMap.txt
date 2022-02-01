@@ -1,0 +1,9 @@
+France 1
+Belgique 2
+Allemagne 3
+Espagne 2
+Italie 2
+Suisse 4
+Pays-Bas 1
+Autriche 1
+Portugal 1
